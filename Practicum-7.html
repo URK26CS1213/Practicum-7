@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MediHive - Responsive Image Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  h2{
+    color: #0066cc;
+  }
+  p{
+    color: #555;
+  }
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .gallery img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  @media(max-width: 768px){
+    .gallery{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media(max-width: 480px){
+    .gallery{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2>MEDIHIVE</h2>
+<p>Your Health, Our Care - Doctors, Medicines & Hospitals</p>
+
+<div class="gallery">
+  <img src="doctor.jpg" alt="Doctor">
+  <img src="hospital.jpg" alt="Hospital">
+  <img src="medicine.jpg" alt="Medicine">
+  <img src="hospi.jpeg" alt="Clinic">
+  <img src="nurse.jpeg" alt="Nurse">
+  <img src="pharmacy.jpeg" alt="Pharmacy">
+  <img src="ambulance.jpeg" alt="Ambulance">
+  <img src="checkup.jpeg" alt="Checkup">
+</div>
+
+</body>
+</html>
